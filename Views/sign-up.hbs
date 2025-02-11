@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="h-full bg-white">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="h-full bg-gray-50">
+    <div class="flex min-h-screen items-center justify-center px-6 py-12 lg:px-8">
+      <div class="sm:mx-auto sm:w-full sm:max-w-md bg-white shadow-xl rounded-lg p-8">
+        <!-- Logo and Heading -->
+        <div class="text-center">
+          <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
+          <h2 class="mt-6 text-3xl font-bold text-gray-900">Create your account</h2>
+          <p class="mt-2 text-sm text-gray-500">Sign up with your email and password to start using the service</p>
+        </div>
+
+        <!-- Sign-up Form -->
+        <form class="mt-8 space-y-6" action="#" method="POST">
+          <div class="space-y-4">
+            <!-- Email Address Field -->
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+              <div class="mt-1">
+                <input type="email" name="email" id="email" autocomplete="email" required
+                  class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+            </div>
+
+            <!-- Password Field -->
+            <div>
+              <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+              <div class="mt-1">
+                <input type="password" name="password" id="password" autocomplete="new-password" required
+                  class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+            </div>
+
+            <!-- Confirm Password Field -->
+            <div>
+              <label for="confirm_password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+              <div class="mt-1">
+                <input type="password" name="confirm_password" id="confirm_password" required
+                  class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+              </div>
+            </div>
+
+            <!-- Sign Up Button -->
+            <div>
+              <button type="submit"
+                class="w-full flex justify-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Sign In Link -->
+        <div class="mt-6 text-center">
+          <p class="text-sm text-gray-500">Already have an account?
+            <a href="login" class="font-semibold text-indigo-600 hover:text-indigo-500">Sign in</a>
+          </p>
+        </div>
+
+        <!-- Divider -->
+        <div class="mt-8 border-t border-gray-300"></div>
+
+        <!-- Social Sign-up Section -->
+        <div class="mt-6 text-center">
+          <p class="text-sm text-gray-500">Or sign up with</p>
+          <div class="mt-2 flex justify-center space-x-4">
+            <button type="button"
+              class="w-8 h-8 flex justify-center items-center rounded-full bg-gray-100 hover:bg-gray-200 focus:outline-none">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Google_logo.svg" alt="Google" class="w-5 h-5">
+            </button>
+            <button type="button"
+              class="w-8 h-8 flex justify-center items-center rounded-full bg-gray-100 hover:bg-gray-200 focus:outline-none">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Facebook_logo_2019.svg" alt="Facebook" class="w-5 h-5">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
